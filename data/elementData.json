@@ -1,0 +1,17 @@
+{
+    "firmaName": "Марка авто$",
+
+    "emailName": "Email для отправки оценки авто",
+
+    "getName": "Получить оценку авто",
+
+    "yearName": "Год$",
+
+    "modelName": "Модель$",
+
+    "field": "[placeholder='A 000 AA 000']",
+
+    "manual": "ввести данные"
+
+
+}
