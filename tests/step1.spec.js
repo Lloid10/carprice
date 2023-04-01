@@ -6,6 +6,7 @@ const elementsData = require ('../data/elementData.json')
 const dataset = JSON.parse(JSON.stringify(require('../data/data.json')))
 
 let page
+let field
 
 
 test.describe('Тест на вход в карпрайс', async ()=> {
@@ -16,6 +17,7 @@ test.describe('Тест на вход в карпрайс', async ()=> {
     const context = await browser.newContext()
     page = await context.newPage()
 
+
   })
 
 
@@ -24,8 +26,9 @@ test(`тест ${data.lighter}`, async () => {
 
   //перейти на страницу
   await page.goto('')
-await page.pause()
-  await auth(page)
+
+  await auth(page, field)
+
   
   // выбрать фирму
   await page.locator('div').filter({ hasText: /^Марка авто$/ }).nth(2).click()
@@ -49,7 +52,7 @@ await page.pause()
   await page.getByRole('button', { name: elementsData.getName }).click()
 
   //проверить урл
-  await expect(page).toHaveURL('https://carprice.ru/wizard-finish')
+  await expect(page).toHaveURL(elementsData.endUrl)
 
 })
 }

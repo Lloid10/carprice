@@ -11,7 +11,13 @@
 
     "field": "[placeholder='A 000 AA 000']",
 
-    "manual": "ввести данные"
+    "manual": "ввести данные",
+
+    "table": "Мы покупаем автомобили по рыночной цене",
+
+    "numberName": "A 000 AA 000",
+
+    "endUrl": "https://carprice.ru/wizard-finish"
 
 
 }
