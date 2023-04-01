@@ -1,11 +1,6 @@
 const elementsData = require ('../data/elementData.json')
 
 
-
-export const inputPlace =  async (page, label, text) => {
-    await page.getByPlaceholder(label).type(text)
-}
-
 export const selectFilter =  async (page, text) => {
     await page.getByText(text, { exact: true }).click()
 }

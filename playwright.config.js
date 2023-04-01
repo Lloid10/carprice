@@ -11,7 +11,7 @@ const config = {
 
   reporter: 'html',
   /* Run tests in files in parallel */
-  fullyParallel: false,
+  fullyParallel: true,
   use: {
     // в каком браузере будут щапускаться тесты
    browserName: 'chromium',
